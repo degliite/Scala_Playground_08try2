@@ -30,3 +30,51 @@ myFood(7)
 myFood.toUpperCase.take(6).slice(1,4)
 myFood.toUpperCase.slice(1,4)
 
+//equality
+4 == 2*2
+val a = 4
+a == 4
+a == 20
+
+myFood == "pasta"
+myFood == "potatoes"
+
+val myOtherFood = "potatoes"
+
+myFood == myOtherFood
+
+//building a string from other strings
+//string interpolation makes it easy to build strings from other strings
+println(s"My name is $myName and I like $myFood")
+
+// bez s priekšā nestrādās
+val myNumber = 77
+val myPI = 3.14159
+println(s"My name is $myName and I like $myFood since $myNumber.")
+
+println(s"My pie is tasty and is round $myPI")
+
+myFood.foreach(println) // really concise way of doing domethg to each character
+
+myFood.toUpperCase.foreach(println)
+
+val otherFood = "potata"
+
+myFood intersect otherFood
+myFood diff otherFood
+myFood.distinct // all unique
+
+res36+res37
+// below makes it easier no to miss any whitespace
+s"$res36   *  $res37"
+s"$res36$res37"
+
+myFood.count(_ == 'o')
+
+val myMagic = "abrakadabra"
+myMagic.count(_ =='a')
+
+myMagic.replace("abra", "oxxo")
+myMagic.indexOf('b')
+
+myMagic.indexOf("aka")
